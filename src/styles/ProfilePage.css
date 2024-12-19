@@ -1,0 +1,59 @@
+.profile-page {
+  padding: 20px;
+  background-color: #f4f4f4; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.profile-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; 
+}
+
+.profile-page h2 {
+  font-size: 1.5rem;
+  color: #333; 
+}
+
+.profile-page p {
+  font-size: 1rem;
+  color: #555; 
+}
+
+.profile-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-page li {
+  margin-bottom: 10px;
+  color: #333; 
+}
+
+.profile-page a {
+  color: #0077b5; 
+  text-decoration: none;
+}
+
+.profile-page a:hover {
+  text-decoration: underline;
+}
+
+.app.dark .profile-page {
+  background-color: #333; 
+}
+
+.app.dark .profile-page h1,
+.app.dark .profile-page h2,
+.app.dark .profile-page p,
+.app.dark .profile-page li {
+  color: #fff; 
+}
+
+.app.dark .profile-page a {
+  color: #00bcd4; 
+}
+
+.app.dark .profile-page a:hover {
+  text-decoration: underline;
+}

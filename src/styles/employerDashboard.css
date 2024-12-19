@@ -1,0 +1,147 @@
+:root {
+  --primary-bg-color: #f5f5f5;
+  --secondary-bg-color: #e0e0e0;
+  --text-color: #000;
+  --heading-color: #333;
+  --paragraph-color: #555;
+  --button-bg-color: #444;
+  --button-hover-bg-color: #333;
+  --border-color: #bbb;
+  --delete-btn-color: #ff0000;
+  --delete-btn-hover-color: #cc0000;
+  --link-color: #333;
+  --link-hover-color: #111;
+  --box-shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+body.dark {
+  --primary-bg-color: #181818;
+  --secondary-bg-color: #202020;
+  --text-color: #ffffff;
+  --heading-color: #eeeeee;
+  --paragraph-color: #cccccc;
+  --button-bg-color: #333;
+  --button-hover-bg-color: #222;
+  --border-color: #555;
+  --delete-btn-color: #ff4d4d;
+  --delete-btn-hover-color: #ff1a1a;
+  --link-color: #cccccc;
+  --link-hover-color: #ffffff;
+  --box-shadow-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+p {
+  color: var(--paragraph-color);
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+button, .post-job-link button {
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .post-job-link button:hover {
+  background-color: var(--button-hover-bg-color);
+  transform: scale(1.05); 
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.job-container, .profile-container {
+  background-color: var(--secondary-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px var(--box-shadow-color);
+}
+
+.job-container h2, .profile-container h2 {
+  color: var(--heading-color);
+}
+
+.job-container p, .profile-container p {
+  color: var(--paragraph-color);
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: var(--delete-btn-color);
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  color: var(--delete-btn-hover-color);
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .job-container, .profile-container {
+    padding: 10px;
+  }
+
+  button, .post-job-link button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+  }
+
+  .delete-btn {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
