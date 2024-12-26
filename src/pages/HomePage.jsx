@@ -53,10 +53,10 @@ const HomePage = () => {
     <div className="home-page">
       {/* Banner Section */}
       <div className="banner">
-        <h1>Welcome to Job Seeker</h1>
-        <p>Your one-stop platform for finding and posting job opportunities</p>
+        <h1>Welcome to JOBIT</h1>
+        <p>Your ONLY platform for finding and posting BESTjob opportunities</p>
         <Link to="/create-profile" className="cta-button">
-          Get Started By Making a Profile
+          Let's Get Started
         </Link>
       </div>
 

@@ -31,16 +31,16 @@ const AboutUs = () => {
         <h2>Meet the Team</h2>
         <div className="team-members">
           <div className="team-member">
-            <h3>Nikhil V Mujeeb</h3>
+            <h3>Zayan Saeed</h3>
             <p>CEO & Co-Founder</p>
-            <p>Passionate about connecting people to the right opportunities.</p>
+            <p> Where Right Oppurtunities are Connected to the Right People</p>
           </div>
         </div>
       </section>
 
       <section className="contact-section">
         <h2>Contact Us</h2>
-        <p>Have questions or want to get in touch? Email us at <a href="mailto:contact@jobboard.com">contact@jobboard.com</a></p>
+        <p>Have questions or want to get in touch? Email us at <a href="mailto:contact@jobit.com">contact@jobit.com</a></p>
       </section>
     </div>
   );
